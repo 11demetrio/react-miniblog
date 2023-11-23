@@ -1,4 +1,3 @@
-// Login.js
 import React, { useState, useEffect } from 'react';
 import { useAutenticacao } from '../../hooks/useAutenticacao';
 
@@ -20,7 +19,6 @@ const Login = () => {
     try {
       await login(userDRM);
     } catch (error) {
-      // Tratar erros específicos, se necessário
       setError('Ocorreu um erro no login, tente novamente.');
     }
   };

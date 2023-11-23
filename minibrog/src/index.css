@@ -20,7 +20,6 @@ body{
   a:hover,nav button:hover{
   color: #bbb ;
   }
-  /* estilos dos formulários */
   form {
   max-width: 40%;
   margin: 0 auto;
@@ -42,7 +41,6 @@ body{
   padding: .8em 0;
   background-color: transparent;
   }
-  /* estilo para entrada de dados */
   input::placeholder,textarea::placeholder{
   font-family: "Montserrat",sans-serif; 
   color: #aaa;

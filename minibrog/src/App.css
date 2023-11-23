@@ -1,9 +1,9 @@
 .App {
-  text-align: center; /* Adicione esta propriedade para centralizar o texto */
+  text-align: center; 
 }
 
 h1 {
-  margin-top: 2em; /* Adicione algum espaçamento superior para melhorar a aparência */
+  margin-top: 2em; 
 }
 
 .container {

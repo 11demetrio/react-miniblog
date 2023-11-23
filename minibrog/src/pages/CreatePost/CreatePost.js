@@ -14,7 +14,6 @@ const CreatePost = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Sua lógica de envio de formulário aqui
   }
 
   return (

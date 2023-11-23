@@ -1,4 +1,3 @@
-/* About.module.css */
 .about {
     text-align: center;
     display: flex;
@@ -7,7 +6,7 @@
   }
   
   .about p {
-    color: #000; /* Alterado para tornar o texto preto */
+    color: #000; 
     margin-bottom: 2em;
   }
   

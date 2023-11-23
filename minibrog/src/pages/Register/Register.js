@@ -1,4 +1,3 @@
-// Formato de Uso de CSS para evitar vazar a outas páginas
 import { useAutenticacao } from '../../hooks/useAutenticacao.js';
 import style from './Register.module.css';
 import { useState,useEffect } from 'react';
@@ -9,8 +8,6 @@ const Register = () => {
  const [confirmPassword,setconfirmPassword] = useState("")
  const [error,setError] = useState("")
 
- // Importando variaveis do nosso hook.
- // Atenção, vamos precisar pasar o usuário ao createUsuario do Hook
  const {createUsuario,error:authError,loading} = useAutenticacao ()
  const handleSubmitAndre = async (e) =>{
   e.preventDefault()
@@ -27,11 +24,8 @@ const Register = () => {
   console.log("Conteudo de resUseAutenticacao: " , resUseAutenticacao)
  
  };
- // Criar um userEffect para mapear se o setErro mudar. Havendo mudança dispara esta função
  useEffect(() => {
-  // Vamos checar se ele mudou para algum valor e não para vazio. Se vazio não entra no if.
   if (authError){
-   // vamos substituir o erro a ser apresentado para o usuário o recebido do useAutenticacao.js
    setError (authError)
   }
  },[authError])
